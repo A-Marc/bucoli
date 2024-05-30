@@ -10,9 +10,6 @@ def trouver_index_html_et_modifier(racine='.'):
                 chemin_relatif = os.path.relpath(os.path.join(dossier, fichier), racine)
                 chemins_index_html.append(chemin_relatif)
     
-    # Enlever le premier élément du tableau s'il y a des éléments dans la liste
-    chemins_index_html = ["philosophie/index.html"]
-    
     # Traiter chaque fichier trouvé
     for chemin in chemins_index_html:
         chemin_complet = os.path.join(racine, chemin)
