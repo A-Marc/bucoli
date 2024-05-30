@@ -26,7 +26,9 @@ def trouver_index_html_et_modifier(racine='.'):
         # Les chaînes à chercher et remplacer
         a_chercher = [
             'href="https://buco.li',
-            'href="https://www.buco.li'
+            'href="https://www.buco.li',
+            'href="http://buco.li',
+            'href="http://www.buco.li'
         ]
         a_remplacer_par = 'href="/bucoli'
         
